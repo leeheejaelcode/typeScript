@@ -58,5 +58,3 @@ class User {
     this.name = name;
   }
 }
-
-let 바보: string = "바보";

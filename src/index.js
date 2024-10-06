@@ -31,4 +31,3 @@ var User = /** @class */ (function () {
     }
     return User;
 }());
-var 바보 = "바보";
