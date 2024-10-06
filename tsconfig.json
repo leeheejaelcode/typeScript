@@ -6,5 +6,10 @@
     "module": "commonjs",
     "noImplicitAny": true,
     "strictNullChecks": true
-  }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules", // node_modules 디렉토리를 제외
+    "**/*.test.ts" // 모든 .test.ts 파일을 제외
+  ]
 }

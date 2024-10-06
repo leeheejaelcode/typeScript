@@ -1,3 +1,6 @@
+// 타입스크립트 자동 컴파일 명령어
+// tsc -w
+
 let 이름: string[] = ["kim", "park"];
 let 나이: { age: number } = { age: 20 };
 // let 나이: { age?: number } = { age: 20 }; ?는 옵션입니다.
@@ -55,3 +58,5 @@ class User {
     this.name = name;
   }
 }
+
+let 바보: string = "바보";

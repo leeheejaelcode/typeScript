@@ -1,3 +1,5 @@
+// 타입스크립트 자동 컴파일 명령어
+// tsc -w
 var 이름 = ["kim", "park"];
 var 나이 = { age: 20 };
 // let 나이: { age?: number } = { age: 20 }; ?는 옵션입니다.
@@ -29,3 +31,4 @@ var User = /** @class */ (function () {
     }
     return User;
 }());
+var 바보 = "바보";
