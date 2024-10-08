@@ -9,7 +9,7 @@ function 내함수(x) {
     }
 }
 function narrowingArray(x) {
-    var arr = [];
+    let arr = [];
     if (typeof x === "number") {
         return (arr[0] = x);
     }
@@ -26,7 +26,7 @@ function narrowingArray(x) {
 // assertion 문법 (타입 덮어쓰기)
 // 변수 as 타입
 function assertionArray(x) {
-    var arr = [];
+    let arr = [];
     arr[0] = x;
 }
 // assertion 문법의 용도
@@ -41,7 +41,7 @@ function assertionArray(x) {
 // [1,2,3] 이렇게 숫자로 깔끔하게 변환되어 나오는 클리닝함수를 만들어오고 타입지정까지 확실히 해보십시오.
 // 모르는 부분은 구글검색해도 봐드림
 function numberArray(array) {
-    var result = array.map(function (x) {
+    let result = array.map((x) => {
         return typeof x === "string" ? Number(x) : x;
     });
     return result;

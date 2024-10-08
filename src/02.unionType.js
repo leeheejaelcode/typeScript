@@ -1,22 +1,22 @@
-var 회원 = 123;
-var 회원2 = "123";
+let 회원 = 123;
+let 회원2 = "123";
 회원; // number
 회원2; // string
-var array1 = [123, "123"];
-var array2 = [123, 456];
-var array3 = ["123", "456"];
-var obj1 = { name: 123, age: "123" };
-var obj2 = { name: "123", age: "123" };
-var obj3 = { name: 123, age: 123 };
+let array1 = [123, "123"];
+let array2 = [123, 456];
+let array3 = ["123", "456"];
+let obj1 = { name: 123, age: "123" };
+let obj2 = { name: "123", age: "123" };
+let obj3 = { name: 123, age: 123 };
 // anyType
-var any = 123;
+let any = 123;
 // unknownType
 // unknownType은 anyType보다 더 안전합니다.
-var unknown = 123;
+let unknown = 123;
 unknown = "123";
 unknown = true;
 // anyType은 타입을 지정하는거 자체를 완전 해제시키기때문에 오류해결하기 어려움
-var 변수1 = any;
+let 변수1 = any;
 // let 변수2: string = unknown; // 에러 발생
 // 타입스크립트는 간단한 연산도 타입을 엄격하게 지켜야합니다.
 // 간단한 수학 연산도 타입이 맞아야함
@@ -27,11 +27,11 @@ var 변수1 = any;
 // 연산 + 1; // 에러
 // let 연산2: unknown = 1;
 // 연산2 - 1; // 에러
-var user = "kim";
-var age = undefined;
-var married = false;
-var 철수 = [user, age, married];
-var 학교 = {
+let user = "kim";
+let age = undefined;
+let married = false;
+let 철수 = [user, age, married];
+let 학교 = {
     score: [100, 97, 84],
     teacher: "Phil",
     friend: "John",

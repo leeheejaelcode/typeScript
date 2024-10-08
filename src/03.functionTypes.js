@@ -1,4 +1,4 @@
-var y; // 변수만 만들면 any타입이 자동할당됩니다.
+let y; // 변수만 만들면 any타입이 자동할당됩니다.
 function fn(x) {
     return x * 2;
 }
@@ -26,7 +26,7 @@ function fn2(x) {
 // 파라미터와 return 타입지정도 잘 해봅시다.
 function helloName(name) {
     if (name) {
-        console.log("\uC548\uB155\uD558\uC138\uC694 ".concat(name, " \uD64D\uAE38\uB3D9"));
+        console.log(`안녕하세요 ${name} 홍길동`);
     }
     else {
         console.log("이름이 없습니다");
@@ -47,9 +47,9 @@ function numberOrString(x) {
 // 결혼가능하냐(700, false, '중') 이렇게 사용할 경우 "결혼가능"을 return 해줍니다.
 // 결혼가능하냐(100, false, '상') 이렇게 사용할 경우 아무것도 return되지 않습니다.
 function 결혼가능확률(월소득, 집보유여부, 매력점수) {
-    var 월소득점수 = 월소득;
-    var 집보유점수 = 집보유여부 ? 500 : 0;
-    var 매력 = 매력점수 === "상" ? 100 : 0;
+    let 월소득점수 = 월소득;
+    let 집보유점수 = 집보유여부 ? 500 : 0;
+    let 매력 = 매력점수 === "상" ? 100 : 0;
     if (월소득점수 + 집보유점수 + 매력 >= 600) {
         return "결혼가능";
     }
